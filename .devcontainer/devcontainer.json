@@ -1,0 +1,24 @@
+{
+    "name": "Go 1.24 Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "lab4-af",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "go.toolsManagement.autoUpdate": true,
+                "go.useLanguageServer": true,
+                "go.gopath": "/go"
+            },
+            "extensions": [
+                "golang.go",
+                "ms-vscode.go"
+            ]
+        }
+    },
+    "forwardPorts": [
+        8000
+    ],
+    "postCreateCommand": "go mod download",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace"
+}

@@ -1,0 +1,37 @@
+info:
+  version: 1.0.1
+  description: NF initial local configuration
+
+configuration:
+  nfName: NF # the name of this NF
+  sbi: # Service-based interface information
+    scheme: http # the protocol for sbi (http or https)
+    bindingIPv4: af.free5gc.org # IP used to bind the service
+    registerIPv4: af.free5gc.org # IP used to register the service
+    port: 8000 # Port used to bind the service
+    tls: # the local path of TLS key
+      pem: cert/af.pem # NF TLS Certificate
+      key: cert/af.key # NF TLS Private key
+  nrfUri: http://nrf.free5gc.org:8000 # NRF URI
+  nrfCertPem: cert/nrf.pem            # NRF Certificate
+  webUri: http://webui.free5gc.org:5000 
+
+  # For testing, localhost is used
+  # webUri: http://af.free5gc.org:8000/oam
+
+  # Gatekeeper configuration
+  gateKeeper:
+    enable: true # true or false
+    servers: # Gatekeeper server list (Bad servers)
+      - name: CKSH.TP.EDU.TW
+        addr: 120.112.1.36
+      - name: Google
+        addr: 8.8.8.8
+      - name: dns101
+        addr: 101.101.101.101
+
+
+logger: # log output setting
+  enable: true # true or false
+  level: info # how detailed to output, value: trace, debug, info, warn, error, fatal, panic
+  reportCaller: false # enable the caller report or not, value: true or false

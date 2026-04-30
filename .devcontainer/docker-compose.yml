@@ -1,0 +1,58 @@
+services:
+  lab4-af:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    expose:
+      - "8000"
+    command: sleep infinity
+    networks:
+      sbinet:
+        aliases:
+          - af.free5gc.org
+
+  nrf:
+    container_name: nrf
+    image: free5gc/nrf:v4.0.1
+    command: ./nrf -c ./config/nrfcfg.yaml
+    expose:
+      - "8000"
+    volumes:
+      - ./config/nrfcfg.yaml:/free5gc/config/nrfcfg.yaml
+      - ./cert:/free5gc/cert
+    environment:
+      DB_URI: mongodb://db/free5gc
+      GIN_MODE: release
+    networks:
+      sbinet:
+        aliases:
+          - nrf.free5gc.org
+    depends_on:
+      - db
+
+  db:
+    container_name: mongodb
+    image: mongo
+    command: mongod --port 27017
+    expose:
+      - "27017"
+    volumes:
+      - dbdata:/data/db
+    networks:
+      sbinet:
+        aliases:
+          - db
+
+networks:
+  sbinet:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.100.163.0/24
+    driver_opts:
+      com.docker.network.bridge.name: br-sbi
+
+volumes:
+  dbdata:
