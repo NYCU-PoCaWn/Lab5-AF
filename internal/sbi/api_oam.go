@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/models"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/models"
 	"github.com/gin-gonic/gin"
 )
 

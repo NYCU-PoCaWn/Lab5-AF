@@ -8,9 +8,9 @@ import (
 	"runtime/debug"
 	"syscall"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/factory"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/service"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/factory"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/service"
 	"github.com/urfave/cli"
 
 	logger_util "github.com/free5gc/util/logger"

@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"net/http"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/app"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/app"
 
 	Nnrf_NFDiscovery "github.com/free5gc/openapi/nrf/NFDiscovery"
 	Nnrf_NFManagement "github.com/free5gc/openapi/nrf/NFManagement"

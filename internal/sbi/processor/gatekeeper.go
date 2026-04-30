@@ -9,8 +9,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/models"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/models"
 )
 
 func (p *Processor) GetWarningUsers(c *gin.Context) {

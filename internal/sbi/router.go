@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/app"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/app"
 	"github.com/gin-gonic/gin"
 
 	"github.com/free5gc/util/httpwrapper"

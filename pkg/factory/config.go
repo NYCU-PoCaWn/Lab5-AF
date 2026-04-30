@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
 	"github.com/asaskevich/govalidator"
 
 	"github.com/free5gc/openapi/models"

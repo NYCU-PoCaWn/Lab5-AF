@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/sbi/consumer"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/sbi/processor"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/app"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/factory"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/sbi/consumer"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/sbi/processor"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/app"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/factory"
 	"github.com/gin-gonic/gin"
 )
 

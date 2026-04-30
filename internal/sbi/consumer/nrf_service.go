@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
 
 	"github.com/free5gc/openapi/models"
 	"github.com/free5gc/openapi/oauth"

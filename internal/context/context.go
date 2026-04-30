@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/internal/logger"
-	"github.com/NYCU-CSCS20047-PoCaWN/lab4-af/pkg/factory"
+	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
+	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/factory"
 	"github.com/google/uuid"
 
 	"github.com/free5gc/openapi/models"

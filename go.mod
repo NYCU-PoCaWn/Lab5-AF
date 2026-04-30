@@ -1,4 +1,4 @@
-module github.com/NYCU-CSCS20047-PoCaWN/lab4-af
+module github.com/NYCU-PoCaWn/Lab5-AF
 
 go 1.24
 
