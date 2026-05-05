@@ -2,9 +2,7 @@ package processor
 
 import (
 	"context"
-	"net"
 	"net/http"
-	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"

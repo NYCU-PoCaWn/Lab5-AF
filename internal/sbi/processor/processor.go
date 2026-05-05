@@ -1,8 +1,6 @@
 package processor
 
 import (
-	"net"
-
 	"github.com/NYCU-PoCaWn/Lab5-AF/internal/logger"
 	"github.com/NYCU-PoCaWn/Lab5-AF/internal/sbi/consumer"
 	"github.com/NYCU-PoCaWn/Lab5-AF/pkg/app"
@@ -27,7 +25,6 @@ type Processor struct {
 	// Gatekeeper Configurations
 	// TODO: You may need to add more data structures to support Gatekeeper features
 	Servers []Server
-	serverIPs []net.IP
 }
 
 func NewProcessor(nf ProcessorNf) (*Processor, error) {
