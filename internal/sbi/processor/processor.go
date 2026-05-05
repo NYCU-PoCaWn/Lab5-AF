@@ -47,12 +47,6 @@ func NewProcessor(nf ProcessorNf) (*Processor, error) {
 				Ipv4Addr: server.Addr,
 			},
 		})
-
-		ip := net.ParseIP(server.Addr)
-		if ip == nil {
-			logger.ProcessorLog.Warnf("Invalid gatekeeper server IP: %s", server.Addr)
-		}
-		p.serverIPs = append(p.serverIPs, ip)
 	}
 	logger.ProcessorLog.Infof("Gatekeeper is enabled, servers: %+v", p.Servers)
 

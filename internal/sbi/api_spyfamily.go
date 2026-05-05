@@ -17,7 +17,7 @@ func (s *Server) getSpyFamilyRoute() []Route {
 				c.JSON(http.StatusOK, "Hello SPYxFAMILY!")
 			},
 			// Use
-			// curl -X GET http://127.0.0.163:8000/spyfamily/ -w "\n"
+			// curl -s http://localhost:8000/spyfamily/ -w "\n"
 		},
 		{
 			Name:    "SPYxFAMILY Character",
@@ -25,7 +25,7 @@ func (s *Server) getSpyFamilyRoute() []Route {
 			Pattern: "/character/:Name",
 			APIFunc: s.HTTPSerchSpyFamilyCharacter,
 			// Use
-			// curl -X GET http://127.0.0.163:8000/spyfamily/Anya -w "\n"
+			// curl -s http://localhost:8000/spyfamily/character/Anya -w "\n"
 			// "Character: Anya Forger"
 		},
 	}
